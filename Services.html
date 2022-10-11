@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Information Technology | It Club </title>
+
+  <!-- link to connect it with css file -->
+  <link rel="stylesheet" href="Navbar.Css">
+  <link rel="stylesheet" href="Services.Css">
+  <!-- link to connect it with css file ended -->
+
+  <!-- Js link for icons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
+  </script>
+  <!-- Js link for icons ended -->
+
+  <!-- Link for Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <!-- Link for Google fonts ennded -->
+
+  <!-- Js Library for if else function -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <!-- Js Library for if else function ended -->
+</head>
+
+<!-- Js for toggle and close icon when to active  -->
+<script>
+  $(function () {
+    $(".toggle").on("click", function () {
+      if ($(".menu").hasClass("active")) {
+        $(".menu").removeClass("active");
+        $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");
+      } else {
+        $(".menu").addClass("active");
+        $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>");
+      }
+    });
+  });
+</script>
+<!-- Js Ended -->
+
+<body>
+  <!-- Top Bar Code Started -->
+  <div class="top-bar">
+    <span>
+      <ion-icon name="call-outline"> </ion-icon> 111 222 333
+    </span>
+    <ul>
+      <li><a href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li><a href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li><a href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+    </ul>
+  </div>
+  <!-- Top Bar Code Ended -->
+
+  <!-- nav Bar Code Started -->
+  <nav>
+    <div class="logo">
+      <img src="Images/logo.png" alt="It-Club"> It Club 
+    </div>
+    <div class="toggle">
+      <a href="#">
+        <ion-icon name="menu-outline"></ion-icon>
+      </a>
+    </div>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Services.html">Services</a></li>
+      <li><a href="Gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+  <!-- Navbar Code Ended -->
+<div class="container">
+  <h1 class="heading">Our Services</h1>
+  <div class="box-container">
+
+    <div class="box">
+      <img src="Images/activity.png" alt="">
+      <h3> Events </h3>
+      <p> We ensure every year student participate in various activites, programs. Needless to say they enjoy a lot.</p>
+    </div>
+
+    <div class="box">
+      <img src="Images/Entertainment.png" alt="">
+      <h3>Entertainment</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, nisi!</p>
+    </div>
+
+    <div class="box">
+      <img src="Images/knowledge.png" alt="">
+      <h3> knowledge </h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, nisi!</p>
+    </div>
+
+    <div class="box">
+      <img src="Images/Logic_Building.png" alt="">
+      <h3> Logic </h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, harum!</p>
+    </div>
+
+    <div class="box">
+      <img src="Images/E-learning.png" alt="">
+      <h3>E-learning</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, in.</p>
+    </div>
+    <div class="box">
+      <img src="Images/Skill.png" alt="">
+      <h3>Skill</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quibusdam?</p>
+    </div>
+
+    <div class="box">
+      <img src="Images/Friendly_Environment.png" alt="">
+      <h3>Environment</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae, sequi.</p>
+    </div>
+
+    <div class="box">
+      <img src="Images/Interest.png" alt="">
+      <h3> Interest </h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, officia.</p>
+    </div>
+  </div>
+</div>
+
+
+
+<footer>
+  <div class="footer-content">
+    <h3>It Club </h3>
+    <img src="Images/logo.png" height="70px" width="75px">
+  </div>
+  <div class="footer-bottom">
+    <p>copyright &copy; 2022 IT Club. designed by <span> IT Club </span></p>
+  </div>
+</footer>
+</html>
+
